@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marinic7.MenuController">
+    <MenuBar prefHeight="26.0" prefWidth="600.0" GridPane.columnSpan="2" GridPane.valignment="TOP">
+        <menus>
+            <Menu mnemonicParsing="false" text="Category">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showCategorySearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewCategoryScreen" text="Add new Category" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Item">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showItemSearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewItemScreen" text="Add new Item" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Factory">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showFactorySearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewFactoryScreen" text="Add new Factory" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Store">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showStoreSearchScreen" text="Search" />
+               <MenuItem mnemonicParsing="false" onAction="#showAddNewStoreScreen" text="Add new Store" />
+                </items>
+            </Menu>
+         <Menu mnemonicParsing="false" onAction="#showStoreReceptiScreen" text="Recepti">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Action 1" />
+           </items>
+         </Menu>
+        </menus>
+    </MenuBar>
+
+</AnchorPane>
